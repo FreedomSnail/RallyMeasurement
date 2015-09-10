@@ -17,29 +17,83 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:orientation="vertical"
   android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
+  android:layout_height="wrap_content"
   android:background="#FFFFFFFF">
+  		<TextView
+        android:id="@+id/labelCurPull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="当前拉力值(g)"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+  		
 		<ScrollView android:id="@+id/svResult"
 		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_weight="1.0"
+		android:layout_height="wrap_content"
+		
 		android:background="#FFFFFFFF"> 
-
-        <TextView
+       <TextView
             android:focusable="true"
 			android:focusableInTouchMode="true"
             android:id="@+id/data_value"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/no_data"
-            android:textSize="16sp"/>
+            android:textSize="100sp"
+            android:textColor="@android:color/holo_blue_bright"
+            />
 
 		</ScrollView>
+	<TextView
+        android:id="@+id/labelPeakPull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="峰值拉力值(g)"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+            android:focusable="true"
+			android:focusableInTouchMode="true"
+            android:id="@+id/PeakPull"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="88888"
+            android:textSize="100sp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+	<TableLayout android:id="@+id/TableLayout03"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_margin="0px"
+		android:stretchColumns="*">
+		<TableRow>
+			<Button android:id="@+id/btnWeightClear"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:text="去皮重"
+			android:textSize="24sp"
+			android:layout_gravity="bottom"/>
+			
+    		<Button android:id="@+id/btnPeakValClear"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:text="峰值清零"
+			android:textSize="24sp"
+			android:layout_gravity="bottom"/>
+		</TableRow>
+	</TableLayout>
+	
     <TableLayout android:id="@+id/TableLayout02"
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"
 		android:layout_margin="0px"
-		android:layout_weight="1.0"
+		
 		android:stretchColumns="0"
 		android:layout_gravity="bottom">
 		<TableRow>
@@ -47,11 +101,14 @@
     			android:id="@+id/edtSend"     
     			android:layout_width="fill_parent"    
     			android:layout_height="wrap_content"
-    			android:layout_span="4"/>
+    			android:gravity="center"
+    			android:textSize="24sp"
+    			android:layout_span="1"/>
 			<Button android:id="@+id/btnSend"
 				android:layout_height="wrap_content" 
 				android:layout_width="wrap_content"
 				android:text="@string/send"
+				android:textSize="24sp"
 				android:layout_gravity="bottom">
 			</Button>
 		</TableRow>

@@ -143,14 +143,15 @@ public class DeviceControlActivity extends Activity {
         // Sets up UI references.
         mDataField = (TextView) findViewById(R.id.data_value);
         edtSend = (EditText) this.findViewById(R.id.edtSend);
-        edtSend.setText("www.jnhuamao.cn");
+        edtSend.setText("360");
         svResult = (ScrollView) this.findViewById(R.id.svResult);
         
         btnSend = (Button) this.findViewById(R.id.btnSend);
 		btnSend.setOnClickListener(new ClickEvent());
 		btnSend.setEnabled(false);
 
-        getActionBar().setTitle(mDeviceName);
+        //getActionBar().setTitle(mDeviceName);
+        getActionBar().setTitle("Ω∞“∂¿≠¡¶≤‚ ‘“«");
         getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         Log.d(TAG, "Try to bindService=" + bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE));

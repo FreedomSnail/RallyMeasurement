@@ -19,7 +19,7 @@
     <string name="label_data">Data:</string>
     <string name="label_device_address">Device address:</string>
     <string name="label_state">State:</string>
-    <string name="no_data">No Connection</string>
+    <string name="no_data">0</string>
     <string name="connected">Connected</string>
     <string name="disconnected">Disconnected</string>
     <string name="title_devices">查找BLE设备</string>
@@ -29,7 +29,7 @@
     <string name="unknown_characteristic">Unknown characteristic</string>
     <string name="unknown_service">Unknown service</string>
     
-    <string name="send">Send</string>
+    <string name="send">测量值校准</string>
 
     <!-- Menu items -->
     <string name="menu_connect">连接</string>

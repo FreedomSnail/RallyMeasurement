@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">BleSoft</string>
+    <string name="app_name">桨叶升力计</string>
     <string name="ble_not_supported">您的设备不支持BLE</string>
     <string name="label_data">Data:</string>
     <string name="label_device_address">Device address:</string>
@@ -36,4 +36,5 @@
     <string name="menu_disconnect">断开</string>
     <string name="menu_scan">搜索</string>
     <string name="menu_stop">停止</string>
+    <dimen  name="text_size_1">24dp</dimen>
 </resources>

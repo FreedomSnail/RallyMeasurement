@@ -19,14 +19,117 @@
   android:layout_width="fill_parent"
   android:layout_height="wrap_content"
   android:background="#FFFFFFFF">
+  <TableLayout android:id="@+id/TableLayout04"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_margin="0px"
+		android:stretchColumns="1">
+		<TableRow>
+		    <TextView
+	        android:id="@+id/label6s1Voltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/holo_orange_dark"
+	        
+	        android:text="6S电压 :"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+	        android:id="@+id/_6s1Voltage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="0V"
+	        android:gravity="center"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow>
+		<TableRow>
+		    <TextView
+	        android:id="@+id/label6s2Voltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/holo_orange_light"
+	        android:text="6S电压 :"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+	        android:id="@+id/_6s2Voltage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/darker_gray"
+	        android:text="0V"
+	        android:gravity="center"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow>
+		<TableRow>
+		    <TextView
+	        android:id="@+id/label12sVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/holo_orange_dark"
+	        android:text="12S电压 :"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+	        android:id="@+id/_12sVoltage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="0V"
+	        android:gravity="center"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow>
+		<TableRow>
+		    <TextView
+	        android:id="@+id/labelAmp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/holo_orange_light"
+	        android:gravity="center"
+	        android:text="电流:"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+	        android:id="@+id/Amp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/darker_gray"
+	        android:text="0A"
+	        android:gravity="center"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow>
+		<TableRow>
+		    <TextView
+	        android:id="@+id/labelOil"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/holo_orange_dark"
+	        android:gravity="center"
+	        android:text="电机油门:"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+	        android:id="@+id/oil"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="0"
+	        android:gravity="center"
+	        android:textSize="@dimen/text_size_1"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		</TableRow>
+	</TableLayout>
   		<TextView
         android:id="@+id/labelCurPull"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@android:color/holo_orange_light"
         android:text="当前拉力值(g)"
         android:gravity="center"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
   		
 		<ScrollView android:id="@+id/svResult"
@@ -42,7 +145,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/no_data"
-            android:textSize="100sp"
+            android:textSize="64sp"
             android:textColor="@android:color/holo_blue_bright"
             />
 
@@ -51,10 +154,10 @@
         android:id="@+id/labelPeakPull"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/background_light"
+        android:background="@android:color/holo_orange_light"
         android:text="峰值拉力值(g)"
         android:gravity="center"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 	<TextView
             android:focusable="true"
@@ -63,8 +166,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="88888"
-            android:textSize="100sp"
+            android:text="0"
+            android:textSize="64sp"
             android:textColor="@android:color/holo_red_dark"
             />
 	<TableLayout android:id="@+id/TableLayout03"
